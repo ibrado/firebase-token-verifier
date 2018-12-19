@@ -1,0 +1,29 @@
+{
+  "name": "firebase-token-verifier",
+  "version": "0.1.0",
+  "description": "Lightweight verification of Firebase JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibrado/firebase-token-verifier.git"
+  },
+  "keywords": [
+    "firebase",
+    "jwt",
+    "token",
+    "auth",
+    "validate",
+    "verify"
+  ],
+  "author": "Alex Ibrado <alex@ibrado.org>",
+  "license": "ISC",
+  "dependencies": {
+    "jwt-simple": "^0.5.5"
+  },
+  "devDependencies": {
+    "readline": "^1.3.0"
+  }
+}
