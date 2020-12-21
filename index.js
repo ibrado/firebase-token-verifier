@@ -98,10 +98,10 @@ const verify = (token, cb) => {
       return response('Expired token: ' + payload.exp, null, cb, resolve, reject);
 
     if(payload.iat >= now)
-      return response('Invalid issue time: ' + iat, null, cb, resolve, reject);
+      return response('Invalid issue time: ' + payload.iat, null, cb, resolve, reject);
 
     if(payload.auth_time >= now)
-      return response('Invalid authentication time: ' + auth_time, null, cb, resolve, reject);
+      return response('Invalid authentication time: ' + payload.auth_time, null, cb, resolve, reject);
 
     if(!payload.sub)
       return response('Missing subject', null, cb, resolve, reject);
